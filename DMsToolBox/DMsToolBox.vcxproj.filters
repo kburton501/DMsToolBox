@@ -15,6 +15,7 @@
     </Filter>
     <Filter Include="Tables">
       <UniqueIdentifier>{bf8bf353-05e7-4c9b-9289-b70d4d55d0ca}</UniqueIdentifier>
+      <Extensions>csv;xlsx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +44,7 @@
     <None Include="Tables\AbilityModifiersTable.csv">
       <Filter>Tables</Filter>
     </None>
-    <None Include="Tables\CharLevelExpProfTable.xlsx">
+    <None Include="Tables\CharLevelExpProfTable.csv">
       <Filter>Tables</Filter>
     </None>
     <None Include="Tables\RacialTraitsTable.xlsx">

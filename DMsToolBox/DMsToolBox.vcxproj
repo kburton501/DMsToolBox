@@ -163,7 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Tables\AbilityModifiersTable.csv" />
-    <None Include="Tables\CharLevelExpProfTable.xlsx" />
+    <None Include="Tables\CharLevelExpProfTable.csv" />
     <None Include="Tables\RacialTraitsTable.xlsx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
