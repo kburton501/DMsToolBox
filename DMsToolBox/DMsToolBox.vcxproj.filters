@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Tables">
+      <UniqueIdentifier>{bf8bf353-05e7-4c9b-9289-b70d4d55d0ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -35,5 +38,16 @@
     <ClCompile Include="DiceRoller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tables\AbilityModifiersTable.csv">
+      <Filter>Tables</Filter>
+    </None>
+    <None Include="Tables\CharLevelExpProfTable.xlsx">
+      <Filter>Tables</Filter>
+    </None>
+    <None Include="Tables\RacialTraitsTable.xlsx">
+      <Filter>Tables</Filter>
+    </None>
   </ItemGroup>
 </Project>
