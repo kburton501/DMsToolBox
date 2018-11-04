@@ -22,7 +22,6 @@ int DiceRoller::roll(int sides) {
 	
 	return dist(mt);
 
-
-
-
 }
+
+

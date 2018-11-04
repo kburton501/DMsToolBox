@@ -13,6 +13,7 @@ public:
 
 
 	int roll(int sides);
+	int rollAbility();
 
 };
 
