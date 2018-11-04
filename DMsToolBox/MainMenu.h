@@ -6,5 +6,6 @@ public:
 	~MainMenu();
 
 	void charCreation();
+	void nameOption();
 };
 

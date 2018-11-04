@@ -1,5 +1,6 @@
 #pragma once
 #include "DiceRoller.h"
+
 class PlayerChar :
 	public DiceRoller
 {
@@ -13,7 +14,7 @@ private:
 	int rollArr[NUM_ABI_ROLLS];
 	int abiArr[NUM_ABI];
 
-
+	
 	void setAbility();
 	void setSize();
 	void setSpeed();
@@ -35,7 +36,7 @@ public:
 	~PlayerChar();
 
 	int testRoll();
-
+	void setName();
 
 	
 

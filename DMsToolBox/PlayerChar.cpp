@@ -1,9 +1,10 @@
 #include "stdafx.h"
 #include "PlayerChar.h"
 
+#include <iostream>
 #include <array>
 #include <numeric>
-
+#include <string>
 PlayerChar::PlayerChar()
 {
 }
@@ -17,6 +18,13 @@ int PlayerChar::testRoll()
 {
 	setAbility();
 	return 0;
+}
+
+void PlayerChar::setName()
+{
+	std::cout << "Enter your characters name: ";
+	std::cin >> name;
+	std::cout << "Welcome " << name << "!" << std::endl;
 }
 
 void PlayerChar::setAbility()
