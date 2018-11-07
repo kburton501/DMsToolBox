@@ -7,6 +7,17 @@
 #include <string>
 PlayerChar::PlayerChar()
 {
+	//roll for stats
+	setAbility();
+	//pick Race
+
+	//pick Class
+
+	//pick Background
+
+	//Pick Equipment
+
+
 }
 
 
@@ -14,11 +25,6 @@ PlayerChar::~PlayerChar()
 {
 }
 
-int PlayerChar::testRoll()
-{
-	setAbility();
-	return 0;
-}
 
 void PlayerChar::setName()
 {
@@ -94,8 +100,6 @@ int PlayerChar::rollAbility()
 	for (int i = 0; i < 4; i++) {
 		sum += rollArr[i];
 	}
-
-
 
 	return sum;
 }

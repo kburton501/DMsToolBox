@@ -5,6 +5,8 @@ class PlayerChar :
 	public DiceRoller
 {
 private:
+
+	//core attributes
 	const static int NUM_ABI = 6;
 	const static int NUM_ABI_ROLLS = 4;
 	std::string name;
@@ -15,6 +17,15 @@ private:
 	int abiArr[NUM_ABI];
 
 	
+	
+	
+	
+public:
+
+	PlayerChar();
+	~PlayerChar();
+
+
 	void setAbility();
 	void setSize();
 	void setSpeed();
@@ -29,13 +40,9 @@ private:
 	void setWis();
 	void setCha();
 	int rollAbility();
-	
-	
-public:
-	PlayerChar();
-	~PlayerChar();
 
-	int testRoll();
+	
+
 	void setName();
 
 	

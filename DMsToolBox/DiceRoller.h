@@ -9,11 +9,8 @@ public:
 	DiceRoller();
 	~DiceRoller();
 
-
-
-
 	int roll(int sides);
-	int rollAbility();
+
 
 };
 

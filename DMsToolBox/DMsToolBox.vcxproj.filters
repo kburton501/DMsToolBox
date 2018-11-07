@@ -14,8 +14,7 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Tables">
-      <UniqueIdentifier>{bf8bf353-05e7-4c9b-9289-b70d4d55d0ca}</UniqueIdentifier>
-      <Extensions>csv;xlsx</Extensions>
+      <UniqueIdentifier>{2beb0cf3-adab-4d83-a03f-5074124f564d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +31,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -51,15 +53,18 @@
     <ClCompile Include="MainMenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerRace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Tables\AbilityModifiersTable.csv">
+    <None Include="RacialTraitsTable.csv">
       <Filter>Tables</Filter>
     </None>
-    <None Include="Tables\CharLevelExpProfTable.csv">
+    <None Include="AbilityModifiersTable.csv">
       <Filter>Tables</Filter>
     </None>
-    <None Include="Tables\RacialTraitsTable.xlsx">
+    <None Include="CharLevelExpProfTable.csv">
       <Filter>Tables</Filter>
     </None>
   </ItemGroup>

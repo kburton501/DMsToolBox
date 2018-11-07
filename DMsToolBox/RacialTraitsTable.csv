@@ -1,5 +1,5 @@
 Race,Strength,Dexterity,Constitution,Intelligence,Wisdom,Charisma,Speed,Size,Subrace's ,DarkVision,Bonus 1,Bonus 2,Bonus 3,Bonus 4
-Dwarf,0,,2,0,0,0,25,2,1,1,,,,
+Dwarf,0,0,2,0,0,0,25,2,1,1,,,,
 Elf,0,2,0,0,0,0,30,2,1,1,,,,
 Halfling,0,2,0,0,0,0,25,1,1,0,,,,
 Human,1,2,1,1,1,1,30,2,0,0,,,,
