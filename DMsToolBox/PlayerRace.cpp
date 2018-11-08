@@ -2,7 +2,7 @@
 #include "PlayerRace.h"
 #include <fstream>
 #include <iostream>
-#include <vector>
+
 
 
 
@@ -10,7 +10,7 @@
 PlayerRace::PlayerRace()
 {
 	
-	buildRaceStruct();
+	buildRaceStruct(&r);
 	
 }
 
@@ -18,17 +18,23 @@ PlayerRace::PlayerRace()
 PlayerRace::~PlayerRace()
 {
 
-	
-
+	//output number of stuct created in vector
+	std::cout << std::endl;
+	std::cout << "Number of Elements: " << r.size() << std::endl;
+	//deletes all elements in vector
+	r.clear();
+	//output number of stuct created in vector after deletion
+	//should be 0
+	std::cout << "Number of Elements: " << r.size() << std::endl;
 
 }
 
-void PlayerRace::buildRaceStruct() {
+void PlayerRace::buildRaceStruct(std::vector<Race*>* r) {
 
 	std::fstream RaceTable;
 	RaceTable.open("RacialTraitsTable.csv");
 	std::string  line;
-	std::vector<Race*>  r;
+	
 	
 	if (RaceTable.is_open())
 	{
@@ -37,7 +43,7 @@ void PlayerRace::buildRaceStruct() {
 
 		for (int i = 0; i < 9; i++) {
 			Race * obj = new Race;
-			r.push_back(obj);
+			(*r).push_back(obj);
 
 			std::cout << std::endl;
 
@@ -85,19 +91,12 @@ void PlayerRace::buildRaceStruct() {
 
 	}
 
-	
+	//If file isn't accesssed couts message
 	else std::cout << "Unable to Open File";
 	
 
-	//output number of stuct created in vector
-
-	std::cout << std::endl;
-	std::cout << "Number of Elements: " << r.size() << std::endl;
-	//deletes all elements in vector
-	r.clear();
-	//output number of stuct created in vector after deletion
-	//should be 0
-	std::cout << "Number of Elements: " << r.size() << std::endl;
+	
 
 
 }
+

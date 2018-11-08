@@ -23,6 +23,7 @@ PlayerChar::PlayerChar()
 
 PlayerChar::~PlayerChar()
 {
+
 }
 
 

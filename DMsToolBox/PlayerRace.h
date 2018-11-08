@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include <string>
 struct Race {
 	std::string name;
@@ -17,7 +18,7 @@ struct Race {
 class PlayerRace
 {
 private:
-	
+	std::vector<Race*> r;
 
 
 
@@ -25,7 +26,7 @@ public:
 	PlayerRace();
 	~PlayerRace();
 
-	void buildRaceStruct();
+	void buildRaceStruct(std::vector<Race*>* r);
 
 
 
