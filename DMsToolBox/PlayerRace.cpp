@@ -9,7 +9,7 @@
 
 PlayerRace::PlayerRace()
 {
-	
+	//fill structs
 	buildRaceStruct(&r);
 	
 }
@@ -139,6 +139,72 @@ int PlayerRace::countRaceTable() {
 	//returns the number races from the file
 	return count -1;
 
+}
+
+
+
+//Setters
+void Race::setRaceStr(int num)
+{
+	strBonus = num;
+}
+
+void Race::setRaceDex(int num)
+{
+	dexBonus = num;
+}
+
+void Race::setRaceCon(int num)
+{
+	conBonus = num;
+}
+
+void Race::setRaceInt(int num)
+{
+	intelBonus = num;
+}
+
+void Race::setRaceWis(int num)
+{
+	wisBonus = num;
+}
+
+void Race::setRaceCha(int num)
+{
+	charisBonus = num;
+}
+
+
+
+//Getters
+int Race::getRaceStr()
+{
+	return strBonus;
+}
+
+int Race::getRaceDex()
+{
+	return dexBonus;
+}
+
+int Race::getRaceCon()
+{
+	return conBonus;
+}
+
+int Race ::getRaceInt()
+{
+	return intelBonus;
+}
+
+int Race::getRaceWis()
+{
+	return wisBonus;
+}
+
+int Race::getRaceCha()
+{
+	return charisBonus;
 }
 
 	

@@ -12,12 +12,29 @@ struct Race {
 	int speed;
 	int size;
 
+	//setters
+	void setRaceStr(int num);
+	void setRaceDex(int num);
+	void setRaceCon(int num);
+	void setRaceInt(int num);
+	void setRaceWis(int num);
+	void setRaceCha(int num);
+
+	//getters
+	int getRaceStr();
+	int getRaceDex();
+	int getRaceCon();
+	int getRaceInt();
+	int getRaceWis();
+	int getRaceCha();
+
 };
 
 
 class PlayerRace
 {
 private:
+	//Vector of pointers to structs storing each Races traits
 	std::vector<Race*> r;
 
 
@@ -33,9 +50,6 @@ public:
 
 	//Counts the number of races in RacialTraitsTable
 	int countRaceTable();
-
-
-
 
 
 
