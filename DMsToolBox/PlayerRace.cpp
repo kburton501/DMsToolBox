@@ -31,12 +31,17 @@ PlayerRace::~PlayerRace()
 
 }
 
+
+
 void PlayerRace::buildRaceStruct(std::vector<Race*>* r) {
 
 	std::fstream RaceTable;
 	RaceTable.open("RacialTraitsTable.csv");
 	std::string  line;
-	
+
+	//# of races in RacialTraitsTable
+	int count = countRaceTable();
+
 	
 	if (RaceTable.is_open())
 	{
@@ -45,7 +50,7 @@ void PlayerRace::buildRaceStruct(std::vector<Race*>* r) {
 		std::cout << "Race      Str Dex Con Int Wis Cha";
 		//create a struct for each race
 		//stores struct data in respective places
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i < count; i++) {
 			Race * obj = new Race;
 			(*r).push_back(obj);
 
@@ -103,4 +108,40 @@ void PlayerRace::buildRaceStruct(std::vector<Race*>* r) {
 
 
 }
+
+
+
+int PlayerRace::countRaceTable() {
+	//opens file
+	std::fstream RaceTable;
+	RaceTable.open("RacialTraitsTable.csv");
+
+
+
+	std::string  line;
+	int count = 0;
+
+	if (RaceTable.is_open())
+	{
+		//skip first line
+		std::getline(RaceTable, line);
+		while (RaceTable.good()) {
+			count++;
+			std::getline(RaceTable, line);
+		}
+		//closes file
+		RaceTable.close();
+	}
+	
+	else std::cout << "Unable to Open File";
+
+	
+	//returns the number races from the file
+	return count -1;
+
+}
+
+	
+
+
 

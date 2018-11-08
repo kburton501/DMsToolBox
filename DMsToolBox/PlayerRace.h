@@ -26,7 +26,13 @@ public:
 	PlayerRace();
 	~PlayerRace();
 
+
+	//stores the data from RacialTraitsTable into structs
 	void buildRaceStruct(std::vector<Race*>* r);
+
+
+	//Counts the number of races in RacialTraitsTable
+	int countRaceTable();
 
 
 
